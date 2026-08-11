@@ -1,0 +1,8 @@
+quantity,value,unit
+n_wavelength_bins,28,count
+wavelength_min,5.187,micron
+wavelength_max,11.873,micron
+primary_weighted_mean_depth,14457.9,ppm (leaf 3)
+primary_weighted_mean_depth_error,11.55,ppm
+mean_photon_noise_error,92.1,ppm
+mean_reduction_pipeline_spread,122.2,ppm
