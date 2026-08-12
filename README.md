@@ -1,19 +1,20 @@
 # HD 209458 b — Exoplanet Atmosphere Report
 
-"Osiris" — the first transiting exoplanet ever found (1999) and the first
-exoplanet whose atmosphere was ever directly detected (2002, sodium via HST
-STIS). This repo re-derives a real, very recent (2026) JWST MIRI transmission
-spectrum testing for magnesium silicate clouds, including a genuine
-reduction-pipeline-uncertainty comparison.
+"Osiris" — the first known exoplanet observed to transit its star
+(1999, months after its radial-velocity discovery) and the first
+exoplanet whose atmosphere was directly detected (2002, sodium via HST
+STIS). This repo works from a 2026 JWST MIRI transmission spectrum
+testing for magnesium silicate clouds, comparing four independent
+reduction pipelines applied to the same underlying data.
 
 **[Open the full report](index.html)** (open locally in a browser, or serve
 with `python -m http.server` from this directory).
 
-## What's real here
+## Data sources
 
-- **System parameters** — queried live from the NASA Exoplanet Archive TAP
+- **System parameters** — from the NASA Exoplanet Archive TAP
   service (`pscomppars` table).
-- **JWST MIRI LRS spectrum** — the real reduced transmission spectrum behind
+- **JWST MIRI LRS spectrum** — the reduced transmission spectrum behind
   Figure 4 of Chubb, Grant et al. (2026), "Magnesium Silicate Clouds in the
   Atmosphere of HD 209458b from a Rule-Based Tree-Structured Data
   Reduction", released publicly on Zenodo
@@ -21,7 +22,7 @@ with `python -m http.server` from this directory).
   independent pipeline reductions ("leaves") of the same underlying data are
   included.
 - **Analysis** — `scripts/analyze_spectrum.py` computes the weighted mean
-  transit depth of the primary reduction, and directly compares the average
+  transit depth of the primary reduction, and compares the average
   photon-noise error to the average spread across the four independent
   reductions. Run it yourself:
 
@@ -34,19 +35,30 @@ with `python -m http.server` from this directory).
 
 ```text
 index.html              the report webpage
-data/                    real JWST MIRI LRS spectrum + original paper README (Zenodo)
-scripts/analyze_spectrum.py   real analysis producing the figure + statistics
+data/                    JWST MIRI LRS spectrum + original paper README (Zenodo)
+scripts/analyze_spectrum.py   analysis producing the figure + statistics
 figures/                 generated plot + summary_statistics.csv
 ```
 
-## Key finding this repo shows directly
+## What the numbers show
 
-28 real wavelength bins, 5.2-11.9 microns. Mean transit depth 14458 ppm.
-The mean spread between the four independent reduction pipelines (122 ppm)
-is *larger* than the mean photon-noise error on any single pipeline's
-spectrum (92 ppm) — a genuine, real demonstration that data-reduction
+28 wavelength bins, 5.2-11.9 microns. Mean transit depth 14458 ppm.
+The mean spread between the four independent reduction pipelines (122
+ppm) is larger than the mean photon-noise error on any single
+pipeline's spectrum (92 ppm) — a demonstration that data-reduction
 choices can matter as much as statistical noise for this kind of
 observation, which is the central point of the source paper.
+
+## Limitations
+
+The max-min spread across the four leaves is a useful sensitivity
+metric, not a statistically calibrated systematic uncertainty: the
+four reductions share the same photons and much of the same
+processing pipeline, so this spread isn't independent of the photon
+noise it's being compared against, and it isn't a variance
+decomposition in the formal sense. The source paper's own
+tree-structured framework treats reduction-choice uncertainty more
+rigorously than this repo's simple max-min comparison does.
 
 ## References
 
