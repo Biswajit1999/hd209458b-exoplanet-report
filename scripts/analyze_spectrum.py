@@ -6,13 +6,19 @@ a Rule-Based Tree-Structured Data Reduction" (Chubb & Grant et al.), file
 hd209_ExoTiC_tree_four_leaf_spectra.txt -- Figure 4 data from the paper.
 Retrieved directly from Zenodo; reproduced unmodified in data/.
 
-The file contains four independent "leaf" reductions from a tree-structured
+The file contains four "leaf" reductions from one tree-structured
 data-reduction pipeline (a way of testing how reduction choices affect the
-recovered spectrum). Per the paper's own README, "leaf 3" is the version
-used in the majority of their retrievals, so it is treated as the primary
-spectrum here; the other three are plotted alongside it as a genuine
-reduction-uncertainty band -- how much the answer changes purely from
-reduction-pipeline choices, holding the underlying data fixed.
+recovered spectrum). The four leaves are correlated, not independent --
+they share the same underlying exposures and much of the same processing,
+differing only in specific reduction-tree choices -- so they are neither
+random draws from a systematic-error distribution nor four separate
+pipelines. Per the paper's own README, "leaf 3" is the version used in
+the majority of their retrievals, so it is treated as the primary
+spectrum here; the other three are plotted alongside it to show
+reduction-choice sensitivity -- how much the answer shifts purely from
+reduction-pipeline decisions, holding the underlying data fixed -- which
+is a useful robustness diagnostic but not a calibrated systematic-error
+budget.
 """
 
 from __future__ import annotations
@@ -69,8 +75,11 @@ def main() -> None:
     primary_err = errs[3]
     mean_depth, mean_depth_error = weighted_mean(primary_depth, primary_err)
 
-    # Reduction-choice spread: at each wavelength, the max-min across the four leaves,
-    # a real estimate of pipeline systematic uncertainty independent of photon noise.
+    # Reduction-choice spread: at each wavelength, the max-min across the four
+    # correlated leaves. This is a sensitivity metric, not a statistically
+    # calibrated systematic-uncertainty estimate -- the leaves share the same
+    # exposures and most of the same processing, so this is not independent
+    # of photon noise and is not a formal error distribution.
     stacked = np.vstack([leaves[i] for i in (1, 2, 3, 4)])
     reduction_spread_ppm = (stacked.max(axis=0) - stacked.min(axis=0)) * 1e6
     mean_reduction_spread = reduction_spread_ppm.mean()
@@ -101,7 +110,7 @@ def main() -> None:
         )
     ax.set_xlabel("Wavelength [micron]")
     ax.set_ylabel("Transit depth (Rp/Rs)^2 [ppm]")
-    ax.set_title("HD 209458 b transmission spectrum (JWST MIRI LRS, real reduced data)\nfour independent tree-reduction pipeline outputs")
+    ax.set_title("HD 209458 b transmission spectrum (JWST MIRI LRS, real reduced data)\nfour correlated leaves of one rule-based reduction tree")
     ax.legend(fontsize=8, frameon=False, loc="upper left")
     ax.grid(alpha=0.25)
     fig.tight_layout()

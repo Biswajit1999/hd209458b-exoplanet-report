@@ -4,8 +4,8 @@
 (1999, months after its radial-velocity discovery) and the first
 exoplanet whose atmosphere was directly detected (2002, sodium via HST
 STIS). This repo works from a 2026 JWST MIRI transmission spectrum
-testing for magnesium silicate clouds, comparing four independent
-reduction pipelines applied to the same underlying data.
+testing for magnesium silicate clouds, comparing four correlated
+reduction-tree leaves applied to the same underlying data.
 
 **[Open the full report](index.html)** (open locally in a browser, or serve
 with `python -m http.server` from this directory).
@@ -19,12 +19,13 @@ with `python -m http.server` from this directory).
   Atmosphere of HD 209458b from a Rule-Based Tree-Structured Data
   Reduction", released publicly on Zenodo
   ([10.5281/zenodo.20089901](https://doi.org/10.5281/zenodo.20089901)). Four
-  independent pipeline reductions ("leaves") of the same underlying data are
-  included.
+  correlated "leaf" reductions of the same underlying data are included —
+  they share the same exposures and most of the same processing, differing
+  only in specific reduction-tree choices.
 - **Analysis** — `scripts/analyze_spectrum.py` computes the weighted mean
   transit depth of the primary reduction, and compares the average
-  photon-noise error to the average spread across the four independent
-  reductions. Run it yourself:
+  photon-noise error to the average spread across the four leaves. Run it
+  yourself:
 
   ```bash
   pip install -r requirements.txt
@@ -43,11 +44,11 @@ figures/                 generated plot + summary_statistics.csv
 ## What the numbers show
 
 28 wavelength bins, 5.2-11.9 microns. Mean transit depth 14458 ppm.
-The mean spread between the four independent reduction pipelines (122
-ppm) is larger than the mean photon-noise error on any single
-pipeline's spectrum (92 ppm) — a demonstration that data-reduction
-choices can matter as much as statistical noise for this kind of
-observation, which is the central point of the source paper.
+The mean spread between the four reduction-tree leaves (122 ppm) is
+larger than the mean photon-noise error on any single leaf's spectrum
+(92 ppm) — a demonstration that data-reduction choices can matter as
+much as statistical noise for this kind of observation, which is the
+central point of the source paper.
 
 ## Limitations
 
