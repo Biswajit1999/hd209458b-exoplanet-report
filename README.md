@@ -1,5 +1,9 @@
 # HD 209458 b — Exoplanet Atmosphere Report
 
+<img src="images/thumbnail.png" alt="Artist's concept of HD 209458 b" width="360">
+
+*AI-generated artist's concept — not a real photograph. See the report for actual JWST MIRI data.*
+
 "Osiris" — the first known exoplanet observed to transit its star
 (1999, months after its radial-velocity discovery) and the first
 exoplanet whose atmosphere was directly detected (2002, sodium via HST
