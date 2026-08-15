@@ -1,8 +1,10 @@
 # HD 209458 b — Exoplanet Atmosphere Report
 
-<img src="images/thumbnail.png" alt="Artist's concept of HD 209458 b" width="360">
+<p align="center">
+  <img src="images/thumbnail.png" alt="Artist's concept of HD 209458 b" width="360">
+</p>
 
-*AI-generated artist's concept — not a real photograph. See the report for actual JWST MIRI data.*
+<p align="center"><em>AI-generated artist's concept — not a real photograph. See the report for actual JWST MIRI data.</em></p>
 
 "Osiris" — the first known exoplanet observed to transit its star
 (1999, months after its radial-velocity discovery) and the first
@@ -11,8 +13,7 @@ STIS). This repo works from a 2026 JWST MIRI transmission spectrum
 testing for magnesium silicate clouds, comparing four correlated
 reduction-tree leaves applied to the same underlying data.
 
-**[Open the full report](index.html)** (open locally in a browser, or serve
-with `python -m http.server` from this directory).
+**[Open the full report](https://biswajit1999.github.io/hd209458b-exoplanet-report/)** — the live GitHub Pages version. You can also open `index.html` locally in a browser, or serve it with `python -m http.server` from this directory.
 
 ## Data sources
 
