@@ -27,10 +27,10 @@ choice sensitivity diagnostic, not an independent systematic-error sample.
 
 ## Integrity manifest
 
-| File | Zenodo MD5 | SHA-256 of committed bytes |
+| File | Zenodo MD5 | SHA-256 (text normalized to LF) |
 |---|---|---|
-| `miri_lrs_four_leaf_spectra.txt` | `8cf6d8289a806aa819b8f0fbf3469ecf` | `89ff8d763fa43e5e919e603333f8aeea424aac281d6b79e3cd43ea84c8859d29` |
-| `ORIGINAL_README.txt` | `f6431c5a41bd83b57c63103785db354c` | `7125e5f871dc7784f7ccb251e9570284a404dbaba5c74a765fa68823244cc828` |
+| `miri_lrs_four_leaf_spectra.txt` | `8cf6d8289a806aa819b8f0fbf3469ecf` | `70be34f6104f5fb8ea2f4acf569641be06c29c4501cd162340732c544325595c` |
+| `ORIGINAL_README.txt` | `f6431c5a41bd83b57c63103785db354c` | `9d9e9ee244e17f78b95d83dce865cc5de1909e439daed97b072dc416021caa13` |
 | `mg2sio4_full_median_and_max_logl_picaso_virga.nc` | `e7bbe01bfc917f3153fe0393d2efbbca` | `fe0e52ed1cc52d82071df5049200ac54e48997157488d23a15303e68c33527d5` |
 | `mgxsioy_full_median_and_max_logl_picaso_virga.nc` | `878ea8dc90870ddd627ea9d83fb5b7e4` | `01d3de902b1eb5235ff2f4499f691aa16c4227a77c62d58b2c7b8f3538bca73b` |
 | `ORIGINAL_README_PICASO_VIRGA.txt` | `e649370ba4c66a52cf888d13f1a07257` | `a2335c9a785ece9bc58fa9e0587b1a71aab3a668e96c93ee06fd0262c6503672` |
