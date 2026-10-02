@@ -1,0 +1,21 @@
+{
+  "scope": "descriptive audit of publication-supplied data and posterior model products",
+  "n_wavelength_bins": 28,
+  "wavelength_range_um": [
+    5.187426845207175,
+    11.87310733770812
+  ],
+  "primary_leaf": 3,
+  "primary_weighted_mean_depth_ppm": 14457.869226593277,
+  "mean_leaf_spread_ppm": 122.24055118868374,
+  "median_leaf_spread_ppm": 84.99575817162187,
+  "mean_reported_error_across_leaves_ppm": 95.71449187054317,
+  "bins_where_spread_exceeds_mean_reported_error": 18,
+  "flat_primary_chi2": 211.09960528354534,
+  "feature_definition": "8.0\u201310.2 minus 5.2\u20137.8 micrometres",
+  "feature_contrast_range_across_leaves_ppm": [
+    267.18638468547357,
+    294.0730099291293
+  ],
+  "inference_boundary": "Correlated reductions and posterior-derived model curves preclude independent detection-significance or model-selection claims from these diagnostics."
+}
