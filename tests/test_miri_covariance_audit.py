@@ -1,8 +1,7 @@
 """Covariance and reduction-leaf stress tests for published MIRI spectra."""
+import miri_covariance_audit as audit
 import numpy as np
 import pytest
-
-import miri_covariance_audit as audit
 
 
 def toy():
