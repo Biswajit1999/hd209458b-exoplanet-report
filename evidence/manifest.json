@@ -1,0 +1,222 @@
+{
+  "schema": 1,
+  "project": "HD 209458 b · JWST/MIRI reduction-sensitivity audit",
+  "repository": "https://github.com/Biswajit1999/hd209458b-exoplanet-report",
+  "files": [
+    {
+      "label": "Data source notes",
+      "path": "data/SOURCE.md",
+      "role": "Data and provenance",
+      "bytes": 2603,
+      "sha256": "c5b24c00508bc3c37a23a6f0c8967c1008fa3539706eb5219c18de250b7ed9b4",
+      "hash_basis": "LF-normalised text",
+      "format": "MD"
+    },
+    {
+      "label": "ORIGINAL README",
+      "path": "data/ORIGINAL_README.txt",
+      "role": "Data and provenance",
+      "bytes": 558,
+      "sha256": "9d9e9ee244e17f78b95d83dce865cc5de1909e439daed97b072dc416021caa13",
+      "hash_basis": "LF-normalised text",
+      "format": "TXT"
+    },
+    {
+      "label": "ORIGINAL README PICASO VIRGA",
+      "path": "data/ORIGINAL_README_PICASO_VIRGA.txt",
+      "role": "Data and provenance",
+      "bytes": 970,
+      "sha256": "a2335c9a785ece9bc58fa9e0587b1a71aab3a668e96c93ee06fd0262c6503672",
+      "hash_basis": "LF-normalised text",
+      "format": "TXT"
+    },
+    {
+      "label": "Miri lrs four leaf spectra",
+      "path": "data/miri_lrs_four_leaf_spectra.txt",
+      "role": "Data and provenance",
+      "bytes": 6302,
+      "sha256": "70be34f6104f5fb8ea2f4acf569641be06c29c4501cd162340732c544325595c",
+      "hash_basis": "LF-normalised text",
+      "format": "TXT"
+    },
+    {
+      "label": "Nasa exoplanet archive pscomppars",
+      "path": "data/nasa_exoplanet_archive_pscomppars.csv",
+      "role": "Data and provenance",
+      "bytes": 258,
+      "sha256": "d0c5448e768027509072beafef1ad85ff9f4e0640cc870609bfca7102c28bb2e",
+      "hash_basis": "LF-normalised text",
+      "format": "CSV",
+      "rows": 1,
+      "columns": 13,
+      "headers": [
+        "pl_name",
+        "pl_orbper",
+        "pl_orbsmax",
+        "pl_rade",
+        "pl_radj",
+        "pl_bmasse",
+        "pl_bmassj"
+      ],
+      "preview": [
+        [
+          "HD 209458 b",
+          "3.52474859000",
+          "0.0470700000",
+          "15.58051000",
+          "1.39000000",
+          "232.01590000",
+          "0.73000000"
+        ]
+      ]
+    },
+    {
+      "label": "Analysis summary",
+      "path": "figures/analysis_summary.json",
+      "role": "Tables and numerical results",
+      "bytes": 877,
+      "sha256": "09e284dd2a5d75bfbef9bf3a68d70387f507eab017c6393a113e980fbe2fd1fc",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "keys": [
+        "scope",
+        "n_wavelength_bins",
+        "wavelength_range_um",
+        "primary_leaf",
+        "primary_weighted_mean_depth_ppm",
+        "mean_leaf_spread_ppm",
+        "median_leaf_spread_ppm"
+      ],
+      "arrays": {
+        "wavelength_range_um": 2,
+        "feature_contrast_range_across_leaves_ppm": 2
+      }
+    },
+    {
+      "label": "Summary statistics",
+      "path": "figures/summary_statistics.csv",
+      "role": "Tables and numerical results",
+      "bytes": 271,
+      "sha256": "7cbda8cc0d5e12d42c461a31d42e92970f12dcb4f1b0c380a5fac49092ec8639",
+      "hash_basis": "LF-normalised text",
+      "format": "CSV",
+      "rows": 7,
+      "columns": 3,
+      "headers": [
+        "quantity",
+        "value",
+        "unit"
+      ],
+      "preview": [
+        [
+          "n_wavelength_bins",
+          "28",
+          "count"
+        ],
+        [
+          "wavelength_min",
+          "5.187",
+          "micron"
+        ],
+        [
+          "wavelength_max",
+          "11.873",
+          "micron"
+        ],
+        [
+          "primary_weighted_mean_depth",
+          "14457.9",
+          "ppm (leaf 3)"
+        ]
+      ]
+    },
+    {
+      "label": "Leaf metrics",
+      "path": "figures/leaf_metrics.csv",
+      "role": "Tables and numerical results",
+      "bytes": 425,
+      "sha256": "4b0bc7b6123a1f9ff6757849f600725a80b4c08f3966c21de54366674c8a711f",
+      "hash_basis": "LF-normalised text",
+      "format": "CSV",
+      "rows": 4,
+      "columns": 5,
+      "headers": [
+        "leaf",
+        "weighted_mean_depth_ppm",
+        "photon_only_mean_error_ppm",
+        "feature_minus_reference_ppm",
+        "photon_only_contrast_error_ppm"
+      ],
+      "preview": [
+        [
+          "1",
+          "14478.128889852367",
+          "11.180799318014508",
+          "267.18638468547357",
+          "25.338499666349815"
+        ],
+        [
+          "2",
+          "14449.364686105566",
+          "12.148889836731675",
+          "279.06422203854106",
+          "28.851714723970243"
+        ],
+        [
+          "3",
+          "14457.869226593277",
+          "11.545517808329206",
+          "294.06054242245466",
+          "27.440701016411484"
+        ],
+        [
+          "4",
+          "14472.723154126708",
+          "13.096957686618286",
+          "294.0730099291293",
+          "31.20325788583946"
+        ]
+      ]
+    },
+    {
+      "label": "Model comparison",
+      "path": "figures/model_comparison.csv",
+      "role": "Tables and numerical results",
+      "bytes": 160,
+      "sha256": "7cf1c70f2f59a08dbe40f91e2275c5b3e435a9b2dd515f61b222d3b9fafe1466",
+      "hash_basis": "LF-normalised text",
+      "format": "CSV",
+      "rows": 2,
+      "columns": 4,
+      "headers": [
+        "model",
+        "fitted_vertical_offset_ppm",
+        "shape_only_chi2",
+        "n_bins"
+      ],
+      "preview": [
+        [
+          "Mg2SiO4",
+          "-370.7379307632781",
+          "69.89652695076175",
+          "28"
+        ],
+        [
+          "Mg2SiO4+MgSiO3",
+          "-327.14009928681463",
+          "84.07372412228243",
+          "28"
+        ]
+      ]
+    },
+    {
+      "label": "Hd209458b transmission spectrum",
+      "path": "figures/hd209458b_transmission_spectrum.png",
+      "role": "Figures",
+      "bytes": 409079,
+      "sha256": "a1aef2df3805ec4b1ca031892f9e491d72c6e00661fadd6bdb68835eb789e019",
+      "hash_basis": "exact bytes",
+      "format": "PNG"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "project": "HD 209458 b · JWST/MIRI reduction-sensitivity audit",
+  "repository": "https://github.com/Biswajit1999/hd209458b-exoplanet-report",
+  "files": [
+    {
+      "label": "Data source notes",
+      "path": "data/SOURCE.md",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "ORIGINAL README",
+      "path": "data/ORIGINAL_README.txt",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "ORIGINAL README PICASO VIRGA",
+      "path": "data/ORIGINAL_README_PICASO_VIRGA.txt",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Miri lrs four leaf spectra",
+      "path": "data/miri_lrs_four_leaf_spectra.txt",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Nasa exoplanet archive pscomppars",
+      "path": "data/nasa_exoplanet_archive_pscomppars.csv",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Analysis summary",
+      "path": "figures/analysis_summary.json",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Summary statistics",
+      "path": "figures/summary_statistics.csv",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Leaf metrics",
+      "path": "figures/leaf_metrics.csv",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Model comparison",
+      "path": "figures/model_comparison.csv",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Hd209458b transmission spectrum",
+      "path": "figures/hd209458b_transmission_spectrum.png",
+      "role": "Figures"
+    }
+  ]
+}
