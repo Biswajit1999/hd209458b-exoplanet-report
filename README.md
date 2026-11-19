@@ -15,6 +15,12 @@ not independently establish a magnesium-silicate detection.
 
 ![JWST/MIRI spectrum, model residuals, and reduction sensitivity](figures/hd209458b_transmission_spectrum.png)
 
+## Research evidence and downloads
+
+[Open the evidence browser](https://biswajit1999.github.io/hd209458b-exoplanet-report/evidence.html) for 10 selected files, including [`analysis_summary.json`](figures/analysis_summary.json). Each file has a download link and SHA-256 digest.
+
+Rebuild the inventory and browser with `python scripts/evidence_catalog.py` and `python scripts/render_evidence_page.py`.
+
 ## Results
 
 The archived table contains 28 wavelength bins. Leaf 3—the spectrum used in
