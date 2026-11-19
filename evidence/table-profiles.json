@@ -1,0 +1,258 @@
+{
+  "schema": 1,
+  "project": "HD 209458 b · JWST/MIRI reduction-sensitivity audit",
+  "tables": [
+    {
+      "path": "data/nasa_exoplanet_archive_pscomppars.csv",
+      "label": "Nasa exoplanet archive pscomppars",
+      "role": "Data and provenance",
+      "rows": 1,
+      "width_mismatches": 0,
+      "columns": [
+        {
+          "name": "pl_name",
+          "blank": 0,
+          "text": 1,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "pl_orbper",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 3.52474859,
+          "maximum": 3.52474859
+        },
+        {
+          "name": "pl_orbsmax",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 0.04707,
+          "maximum": 0.04707
+        },
+        {
+          "name": "pl_rade",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 15.58051,
+          "maximum": 15.58051
+        },
+        {
+          "name": "pl_radj",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 1.39,
+          "maximum": 1.39
+        },
+        {
+          "name": "pl_bmasse",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 232.0159,
+          "maximum": 232.0159
+        },
+        {
+          "name": "pl_bmassj",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 0.73,
+          "maximum": 0.73
+        },
+        {
+          "name": "pl_eqt",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 1459.0,
+          "maximum": 1459.0
+        },
+        {
+          "name": "hostname",
+          "blank": 0,
+          "text": 1,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "st_teff",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 6091.0,
+          "maximum": 6091.0
+        },
+        {
+          "name": "st_rad",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 1.19,
+          "maximum": 1.19
+        },
+        {
+          "name": "st_mass",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 1.23,
+          "maximum": 1.23
+        },
+        {
+          "name": "sy_dist",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 48.3016,
+          "maximum": 48.3016
+        }
+      ]
+    },
+    {
+      "path": "figures/summary_statistics.csv",
+      "label": "Summary statistics",
+      "role": "Tables and numerical results",
+      "rows": 7,
+      "width_mismatches": 0,
+      "columns": [
+        {
+          "name": "quantity",
+          "blank": 0,
+          "text": 7,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "value",
+          "blank": 0,
+          "text": 0,
+          "finite": 7,
+          "nonfinite": 0,
+          "minimum": 5.187,
+          "maximum": 14457.9
+        },
+        {
+          "name": "unit",
+          "blank": 0,
+          "text": 7,
+          "finite": 0,
+          "nonfinite": 0
+        }
+      ]
+    },
+    {
+      "path": "figures/leaf_metrics.csv",
+      "label": "Leaf metrics",
+      "role": "Tables and numerical results",
+      "rows": 4,
+      "width_mismatches": 0,
+      "columns": [
+        {
+          "name": "leaf",
+          "blank": 0,
+          "text": 0,
+          "finite": 4,
+          "nonfinite": 0,
+          "minimum": 1.0,
+          "maximum": 4.0
+        },
+        {
+          "name": "weighted_mean_depth_ppm",
+          "blank": 0,
+          "text": 0,
+          "finite": 4,
+          "nonfinite": 0,
+          "minimum": 14449.364686105566,
+          "maximum": 14478.128889852367
+        },
+        {
+          "name": "photon_only_mean_error_ppm",
+          "blank": 0,
+          "text": 0,
+          "finite": 4,
+          "nonfinite": 0,
+          "minimum": 11.180799318014508,
+          "maximum": 13.096957686618286
+        },
+        {
+          "name": "feature_minus_reference_ppm",
+          "blank": 0,
+          "text": 0,
+          "finite": 4,
+          "nonfinite": 0,
+          "minimum": 267.18638468547357,
+          "maximum": 294.0730099291293
+        },
+        {
+          "name": "photon_only_contrast_error_ppm",
+          "blank": 0,
+          "text": 0,
+          "finite": 4,
+          "nonfinite": 0,
+          "minimum": 25.338499666349815,
+          "maximum": 31.20325788583946
+        }
+      ]
+    },
+    {
+      "path": "figures/model_comparison.csv",
+      "label": "Model comparison",
+      "role": "Tables and numerical results",
+      "rows": 2,
+      "width_mismatches": 0,
+      "columns": [
+        {
+          "name": "model",
+          "blank": 0,
+          "text": 2,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "fitted_vertical_offset_ppm",
+          "blank": 0,
+          "text": 0,
+          "finite": 2,
+          "nonfinite": 0,
+          "minimum": -370.7379307632781,
+          "maximum": -327.14009928681463
+        },
+        {
+          "name": "shape_only_chi2",
+          "blank": 0,
+          "text": 0,
+          "finite": 2,
+          "nonfinite": 0,
+          "minimum": 69.89652695076175,
+          "maximum": 84.07372412228243
+        },
+        {
+          "name": "n_bins",
+          "blank": 0,
+          "text": 0,
+          "finite": 2,
+          "nonfinite": 0,
+          "minimum": 28.0,
+          "maximum": 28.0
+        }
+      ]
+    }
+  ],
+  "excluded": []
+}
